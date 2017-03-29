@@ -1,19 +1,22 @@
-
-    
     <body style="background-color:#b3b3ff;">
  
-    <div class="center jumbotron">
-    
-        <h1>WHERE AVERAGE BECOMES LEGENDARY</h1>
-             
-    
-        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
-    
-    </div>
+       <div class="header" align="center">
+           <h1>WHERE AVERAGE BECOMES LEGENDARY
+             <p></p>
+            </h1>
+                
+            <h2>
+                <%= link_to "Home", '#', class: "btn btn-lg btn-primary" %>
+                <%= link_to "Products", '#', class: "btn btn-lg btn-primary" %>
+                <%= link_to "Community", '#', class: "btn btn-lg btn-primary" %>
+                <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+
+            </h2>
+        </div>
         
     
-        <div class = "Home Pic" align="center">
-                <%= link_to image_tag("Pump.jpg", alt: "The Man"),
+        <div align="center">
+           <%= link_to image_tag("Pump.jpg", alt: "The Man"),
             'http://bodybuilding.com/' %>
         </div>
     
@@ -25,22 +28,11 @@
         
         <div align="center">
             <h2>Michael Towe max squating 370lbs unassisted with the help of a powerade/RSP pre-workout mix</h2>
-                <%= link_to video_tag("video.mp4", alt: "Doin' Work"),
-                'http://bodybuilding.com' %>
+                <%= link_to video_tag("/videos/video.mp4", alt: "Doin' Work"),
+            'http://bodybuilding.com/' %>
         </div>
-    
-       <!-- <div>
-            <form>
-                <fieldset>
-                <legend>Test</legend>
-                    <input type="text" name="myTextBox">
-                    <input type="radio" name="myRadioButton">
-                    <input type="submit" value="submitButton">
-                </fieldset>
-            </form>
-        </div> -->
         
-        <div class="SideBar">
+    <!-- Move to About page    <div class="SideBar"> 
             
             <ul>
                 <li>Have ideas to improve our site? Are we missing your favorite products? Contact us and let us know!</li>
@@ -49,7 +41,7 @@
                 <li><p> </p>Email: jpgeorge@email.uscupstate.edu</li>
             </ul>
             
-        </div>
+        </div> -->
         
         <div class="tables">
     
@@ -91,10 +83,7 @@
             </ol>
         </div>
         
-    </body>
+    </body
     
-    <%= link_to image_tag("SunSet.jpeg", alt: "SunSet Logo"),
+<%= link_to image_tag("SunSet.jpeg", alt: "Sun Set"),
             'http://bodybuilding.com/' %>
-    
-    
-    
