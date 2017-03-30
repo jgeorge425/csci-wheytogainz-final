@@ -1,11 +1,11 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "WheyToGainz", '#', id: "logo" %>
+    <%= link_to "WheyToGainz", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home",   '#' %></li>
-        <li><%= link_to "Products",   '#' %></li>
-        <li><%= link_to "Community",   '#' %></li>
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Products", products_path %></li>
+        <li><%= link_to "Community", community_path %></li>
         <li><%= link_to "Log in", '#' %></li>
       </ul>
     </nav>

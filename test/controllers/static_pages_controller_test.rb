@@ -6,27 +6,33 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     @base_title = "WheyToGainz.com"
   end
 
- test "should get root" do
-    get root_url
-    assert_response :success
- end
-
-  test "should get Home" do
-    get static_pages_Home_url
+  test "should get home" do
+    get root_path
     assert_response :success
     assert_select "title", "WheyToGainz.com"
   end
 
-  test "should get Products" do
-    get static_pages_Products_url
+  test "should get products" do
+    get products_path 
     assert_response :success
     assert_select "title", "Products | #{@base_title}"
   end
 
-  test "should get Community" do
-    get static_pages_Community_url
+  test "should get community" do
+    get community_path
     assert_response :success
     assert_select "title", "Community | #{@base_title}"
   end
 
+  test "should get contact" do
+    get contact_path
+    assert_response :success
+    assert_select "title", "Contact | #{@base_title}"
+  end
+  
+  test "should get about" do
+    get about_path
+    assert_response :success
+    assert_select "title", "About | #{@base_title}"
+  end
 end

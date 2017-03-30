@@ -1,18 +1,10 @@
 Rails.application.routes.draw do
-  
-  root 'static_pages#Home'
+  get 'user/new'
 
-  get 'static_pages/Home'
-
-  get 'static_pages/Products'
-
-  get 'static_pages/Community'
-
-
-  #get 'static_pages/Products'
-  get '/help', to: 'static_pages#Products'
-  
-  #get 'static_pages/Community'
-  get '/help', to: 'static_pages#Community'
-  
-  end
+  root 'static_pages#home'
+  get  '/products',    to: 'static_pages#products'
+  get  '/community',   to: 'static_pages#community'
+  get  '/contact', to: 'static_pages#contact'
+  get '/about', to: 'static_pages#about'
+  get '/signup', to: 'user#new'
+end
