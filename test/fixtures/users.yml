@@ -1,1 +1,4 @@
-#empty
+johnny:
+    name: Johnny George
+    email: jpgeorge@email.uscupstate.edu
+    password_digest: <%= User.digest('password') %>
